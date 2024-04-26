@@ -1,0 +1,785 @@
+ <!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KK | Order Now</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/bistro-icons.css">
+<link rel="stylesheet" type="text/css" href="css/settings.css">
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css">
+<link rel="stylesheet" type="text/css" href="css/zerogrid.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/loader.css">
+<link rel="shortcut icon" href="images/favicon.png">
+
+<!-- [if lt IE 9]> -->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<!-- ![endif] -->
+
+<style>
+
+.orderform{
+
+  display:flexbox;
+  margin: 10%;
+  padding:2px;
+  background-color: snow;
+
+}
+
+.flex-box{
+  display:inline-block;
+  width:33%;
+
+}
+
+/* Dropdown container */
+.dropdown-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Dropdown button */
+    .dropdown-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown-container:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Style for the images */
+    .item-img {
+      width: 100%;
+      max-width: 200px;
+    }
+
+    /* Style for the items */
+    .dropdown-item {
+      margin-bottom: 20px;
+    }
+
+    /* Clearfix to fix float issues */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+
+
+</style>
+</head>
+
+<body>
+
+<!--Loader-->
+<div class="loader"> 
+   <div class="cssload-container">
+     <div class="cssload-circle"></div>
+     <div class="cssload-circle"></div>
+   </div>
+</div>
+
+<!--Top bar-->
+<div class="topbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="pull-left hidden-xs">KK Come to Expect the Best in Town</p>
+        <p class="pull-right"><i class="fa fa-ambulance"></i>Order Online 111-123-6789</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<header id="main-navigation">
+  <div id="navigation" data-spy="affix" data-offset-top="20">
+    <div class="container">
+      <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fixed-collapse-navbar" aria-expanded="false"> 
+            <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> 
+            </button>
+           <!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" class="img-responsive"></a>  -->
+         </div>
+        
+            <div id="fixed-collapse-navbar" class="navbar-collapse collapse navbar-right">
+              <ul class="nav navbar-nav">
+                <li class="dropdown active">
+                   <a href="#." class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                   <ul class="dropdown-menu">
+                    <li><a href="index.html">Home V1</a></li>
+                    <!-- <li><a href="index2.html">Home V2</a></li> -->
+                  </ul>
+                </li>
+                <li><a href="food.html">Our Food</a></li>
+                
+                <li class="dropdown">
+                  <a data-toggle="dropdown" href="#." class="dropdown-toggle">pages</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <!-- <li><a href="blog-detail.html">Blog Detail</a></li> -->
+                    <li><a href="faq.html">FAQ</a></li>
+                  </ul>
+                 </li>
+                <li class="dropdown">
+                  <!-- <a data-toggle="dropdown" href="#." class="dropdown-toggle">gallery</a> -->
+                  <!-- <ul class="dropdown-menu">
+                    <li><a href="gallery.html">Gallery Three</a></li>
+                    <li><a href="gallery4c.html">Gallery Four column</a></li>
+                    <li><a href="gallery2c.html">Gallery Two column</a></li>
+                  </ul> -->
+                </li>
+                <!-- <li><a href="blog.html">blog</a></li> -->
+                <li class="active"><a href="order.html">Order Now</a></li>
+                <li class="dropdown">
+                  <!-- <a data-toggle="dropdown" href="#." class="dropdown-toggle">Location</a> -->
+                  <!-- <ul class="dropdown-menu">
+                    <li><a href="location.html">Location V1</a></li>
+                    <li><a href="location2.html">Location V2</a></li> -->
+                  </ul>
+                </li>
+              </ul>
+            </div>
+         </nav>
+         </div>
+       </div>
+     </div>
+  </div>
+</header>
+
+<!--Page header & Title-->
+<section id="page_header">
+<div class="page_title">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+         <h2 class="title">Order Online</h2>
+         <p>Order Delicious Food</p>
+      </div>
+    </div>
+  </div>
+</div>  
+</section>
+
+ <!-- <section id="order-form" class="order-page">
+   
+  <div class="container order_form padding">
+    <div class="row">
+      <div class="col-md-12 appointment_form">
+        <h2 class="heading">Online Order</h2>
+        <hr class="heading_space">
+      <div class="row">  
+       <div class="col-md-8">
+       <form onSubmit="return false" id="order_form" class="callus">
+            <div class="row">
+            <div class="form-group col-md-12">
+            <div id="result" class="text-center"></div></div></div>
+             <div class="row">
+             <div class="form-group col-md-12">
+             <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p> 
+            </div></div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+
+                    <form action="https://formsubmit.co/masum.verma1702@email.com" method="POST">
+                    <input type="text" class="form-control" placeholder="Name"  name="name" id="name"  required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                   <input type="email" class="form-control" placeholder="Email address" name="email" id="email" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Phone No" name="phone" id="phone" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+
+                   <select class="form-control" id="deal" name="deal">
+                       <option> Select Deal </option>
+                       
+                       <option> Classic Nachos (INR 159)</option>
+                       <option>Grill Sandwich(INR 249)</option>
+                       <option>Avocado Toast<span>(INR 150)</span></option>
+                       <option>Stuffed Mushroom<span>(INR 199)</span></option>
+                       <option>Baked Potato Jackets<span>(INR 99)</span></option>
+                       <option>Mexican Taco<span>(INR 199)</span></option>
+                       <option>Quesadillas Acapulco<span>(INR 170.00)</span></option>
+                       <option> Deal One ( INR 200) </option>
+                       <option> Deal Two (INR 500) </option>
+                       <option> Deal Three (INR 900) </option>
+                       <option> Deal Four (INR 1300) </option>
+                    
+
+
+
+
+
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea placeholder="Order Details"  id="message" name="message" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    
+                     <div class="btn-submit btn-common-white">
+
+
+
+                      
+                   <input type="submit" name="submit"  value="Place &nbsp; Order" id="btn_order_submit" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </form>
+           </div> 
+           </div>
+      </div>
+      <div class="col-md-3">
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  </form
+</section>  -->
+
+
+<section id="order-form" class="order-page">
+<div class="orderform">
+  <form action="https://formsubmit.co/vermamasum.test@gmail.com" method="POST">
+    <div  style="display:inline-flex; width:100%;">
+    <input type="text" class="form-control" placeholder="Name"  name="name" id="name"  required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+    <input type="text" class="form-control" placeholder="Phone No" name="phone" id="phone" required ><br/><br/>
+  </div><br/><br/>
+
+    <input type="email" class="form-control" placeholder="Email address" name="email" id="email" required><br/><br/>
+
+   <h3 style="font-size: xx-large; font-weight: bolder; text-align: center; color: grey;">Select a deal</h3>
+    <!-- <table >
+     
+      <tr style="display: block; width: 100%;">
+
+    <td style="display: inline-block;">
+      <h3 style="color: grey;">Menu Items</h3><br/><br/>
+    <input type="checkbox" id="1" name="Item" value="Cheeseburger">
+    <label for="Chheseburger"> Chheseburger   (INR 99)</label><br/><br/>
+    <input type="checkbox" id="2" name="Item" value="Grill Sandwich">
+    <label for="Grill Sandwich"> Grill Sandwich   (INR 129)</label><br/><br/>
+    <input type="checkbox" id="3" name="Item" value="Classic Nacho">
+    <label for="Classic Nacho">Classic Nacho   (INR 79)</label><br/> <br/>
+    <input type="checkbox" id="4" name="Item" value="Taco Mexicano">
+    <label for="Taco Mexicano"> Taco Mexicano   (INR 99)</label><br/><br/>
+     <input type="checkbox" id="5" name="Item" value="Pizza">
+    <label for="Pizza"> Pizza  (INR 199)</label><br>
+  </td>
+
+  
+  <h3></h3><br/><br/>&nbsp;
+
+  <td style="display: inline-block; margin-left:200px ; margin-top: 80px;">
+    <div>
+      <img src="./images/Schezwan noodles.jpg" style="width: 10%; height:5%;">
+    <input type="checkbox" id="6" name="Item" value="Schezwan Noodles" >
+    <label for="Schezwan Noodles">Schezwan Noodles
+       (INR 149)</label><br><br/></div>
+    <input type="checkbox" id="2" name="Item" value="Paneer Crispy">
+    <label for="Paneer Crispy"> Paneer Crispy  (INR 199)</label><br><br/>
+    <input type="checkbox" id="3" name="Item" value="Chat">
+    <label for="Chat">Chat   (INR 99)</label><br> <br/>
+    <input type="checkbox" id="4" name=" Item " value=" Grilled Vegetable ">
+    <label for=" Grilled Vegetable "> Grilled Vegetable   (INR 49)</label><br><br/>
+     <input type="checkbox" id="5" name="Item" value="Veg Stroganoff">
+    <label for="Veg Stroganoff"> Veg Stroganoff   (INR 179)</label><br><br/>
+  </td>
+ 
+<td style="display: inline-block;  margin-left:400px ;">
+  <h3 style="color: grey;">Bakery Items</h3><br/><br/>
+  <input type="checkbox" id="1" name="Item" value="Chcolate Truffle">
+  <label for="Chcolate Truffle"> Chocolate Truffle   (INR 65)</label><br><br/>
+  <input type="checkbox" id="2" name="Item" value="Tart">
+  <label for="Tart">Tart  (INR 90)</label><br><br/>
+  <input type="checkbox" id="3" name="Item" value="Delicious Cookies">
+  <label for="Delicious Cookies">Delicious Cookies  (INR 79)</label><br> <br/>
+  <input type="checkbox" id="4" name=" Item " value=" Cupcake">
+  <label for=" Cupcake ">Cupcake  (INR 99)</label><br><br/>
+   <input type="checkbox" id="5" name="Item" value="Swiss Roll">
+  <label for="Swiss Roll">Swiss Roll  (INR 69)</label><br><br/>
+</td>
+</tr>
+</table>
+<br/> -->
+
+<!-- <table>
+  <tr>
+    <td>
+      <div style="border: lightslategray;">
+        <img src="./images/Schezwan noodles.jpg" style="width: 10%; height:5%;">
+    <input type="checkbox" id="6" name="Item" value="Schezwan Noodles" >
+    <label for="Schezwan Noodles">Schezwan Noodles
+       (INR 149)</label><br><br/>
+      </div>
+    </td>
+  </tr>
+</table> -->
+
+
+<!-- <div class="menu-items">
+  <table>
+    <th style="font-size:xx-large; font-weight: bolder; text-align: center;">Menu Items</th>
+    <tr>
+       <td><div style=" margin:40px;">
+        <img src="./images/grid-layout2.jpg" alt="Cheeseburger" class="item-img" style="width:200px;"><br/><br/>
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cheese Burger<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 99</h3>
+       <center> <input type="checkbox" id="1" name="Item" value="Cheeseburger">
+      <label for="Chheseburger"> </label><br/><br/></center>
+       </div></td>
+
+       <td><div>
+        <img src="./images/sandwich.jpg" alt="Cheeseburger" class="item-img" style="width:180px;">
+        <h3><br/>Grill Sandwich<br/>Rs 129</h3>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="2" name="Item" value="Grill Sandwich">
+    <label for="Grill Sandwich"></label><br/><br/></div></td>
+    
+    <td><div style=" margin:40px;">
+      <img src="./images/nacho.jpg" alt="Cheeseburger" class="item-img" style="width:180px;">
+      <h3><br/>Classic Nachos<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 79</h3>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="3" name="Item" value="Classic Nacho">
+    <label for="Classic Nacho"></label><br/><br/>
+     </div></td>
+  
+  <td><div style=" margin:40px;">
+    <img src="./images/taco1.jpg" alt="Noodles" class="item-img" style="width:180px;">
+    <h3><br/>Taco Mexicano<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 99</h3>
+    <center><input type="checkbox" id="4" name="Item" value="Taco Mexicano">
+    <label for="Taco Mexicano"></label><br/><br/></center>
+   </div></td>
+
+
+
+  <td><div style=" margin:40px;">
+    <img src="./images/gallery3.jpg" alt="Cheeseburger" class="item-img" style="width:100%;">
+    <h3><br/>&nbsp;&nbsp;&nbsp;&nbsp;Pizza<br/>&nbsp;&nbsp;&nbsp;Rs 199</h3>
+    <center><input type="checkbox" id="5" name="Item" value="Pizza">
+    <label for="Pizza"> </label><br></center>
+   </div></td>
+    </tr>
+    <tr>
+      <td><div style=" margin:40px;">
+        <img src="./images/popular1.jpg" alt="Cheeseburger" class="item-img" style="width:100%;">
+        <h3><br/>Schezwan Noodles<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 149</h3>
+        <center><input type="checkbox" id="6" name="Item" value="Schezwan Noodles" >
+    <label for="Schezwan Noodles"></label><br><br/></div></center>
+       </div></td>
+    <br/>
+    
+   
+      <td><div style=" margin:90px;">
+        <img src="./images/spring" alt="Cheeseburger" class="item-img" style="width:100%;">
+        <h3><br/>Paneer Crispy<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 199</h3>
+        <center><input type="checkbox" id="2" name="Item" value="Paneer Crispy">
+        <label for="Paneer Crispy"></label><br><br/></center>
+       </div></td>
+    <br/>
+    
+      <td><div style=" margin:90px;">
+        <img src="./images/food-3.jpg" alt="Cheeseburger" class="item-img" style="width:100%;">
+        <h3><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chat<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 99</h3>
+        <center><input type="checkbox" id="3" name="Item" value="Chat">
+    <label for="Chat"></label><br> <br/>
+       </div></td>
+
+       <td><div style=" margin:90px;">
+        <img src="./images/food-4.jpg" alt="Cheeseburger" class="item-img" style="width:100%;">
+        <h3><br/>Grilled Vegetable<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 49</h3>
+        <center><input type="checkbox" id="4" name=" Item " value=" Grilled Vegetable ">
+    <label for=" Grilled Vegetable "> </label><br><br/></center>
+       </div></td>
+    <br/>
+    <td><div style=" margin:90px;">
+      <img src="./images/food-1.jpg" alt="Cheeseburger" class="item-img" style="width:100%;">
+      <h3><br/>&nbsp;&nbsp;Veg Stroganoff<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 179</h3>
+      <center><input type="checkbox" id="5" name="Item" value="Veg Stroganoff">
+      <label for="Veg Stroganoff"> </label><br><br/></center>
+     </div></td>
+  <br/>
+    </tr>
+
+<th style="font-size:xx-large; font-weight: bolder; text-align: center;">Bakery Items</th>
+    <tr>
+     
+      <td><div style=" margin:90px;">
+        <img src="./images/choco.jpg" alt="Cheeseburger" class="item-img">
+        <h3><br/>Chocolate truffle<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 65</h3>
+        <center><input type="checkbox" id="1" name="Item" value="Chcolate Truffle">
+        <label for="Chcolate Truffle"> </label><br><br/></center>
+       </div></td>
+    <br/>
+    
+   
+      <td><div style=" margin:90px;">
+        <img src="./images/tart.jpg" alt="Cheeseburger" class="item-img" style="width:170px;">
+        <h3><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tart<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 90</h3>
+        <center><input type="checkbox" id="2" name="Item" value="Tart">
+        <label for="Tart"></label><br><br/></center>
+       </div></td>
+    <br/>
+    
+      <td><div style=" margin:90px;">
+        <img src="./images/cookies.jpg" alt="Cheeseburger" class="item-img" style="width: 170px;">
+        <h3><br/>Delicious Cookies<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 79</h3>
+        <center><input type="checkbox" id="3" name="Item" value="Delicious Cookies">
+        <label for="Delicious Cookies"></label><br> <br/></center>
+       </div></td>
+
+       <td><div style=" margin:90px;">
+        <img src="./images/cupcake.jpg" alt="Cheeseburger" class="item-img">
+        <h3><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cupcake<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 99</h3>
+        <center><input type="checkbox" id="4" name=" Item " value=" Cupcake">
+        <label for=" Cupcake "></label><br><br/></center>
+       </div></td>
+
+    <br/>
+    <td><div style=" margin:90px;">
+      <img src="./images/roll.jpg" alt="Cheeseburger" class="item-img" style="width: 170px;">
+      <h3><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Swiss Roll<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 69</h3>
+      <center><input type="checkbox" id="5" name="Item" value="Swiss Roll">
+        <label for="Swiss Roll"></label><br><br/></center>
+     </div></td>
+  <br/>
+    </tr>
+  </table>
+</div> -->
+<div class="menu-items">
+  <table>
+    <tr>
+      <th colspan="5" style="font-size: xx-large; font-weight: bolder; text-align: center; color: grey;">Menu Items</th>
+    </tr>
+    <tr>
+      <td style="padding: 20px;">
+        <div>
+          <img src="./images/grid-layout2.jpg" alt="Cheeseburger" class="item-img" style="width:100%;"><br><br>
+          <center><h3>Cheese Burger<br>Rs 99</h3>
+            <input type="checkbox" id="10" name="Items" value="Cheeseburger"></center>
+        </div>
+      </td>
+
+      <td style="padding: 20px;">
+        <div>
+          <img src="./images/sandwich.jpg" alt="Grill Sandwich" class="item-img" style="width: 100%;"><br><br>
+          <center><h3>Grill Sandwich<br>Rs 129</h3>
+            <input type="checkbox" id="20" name="Items" value="Grill Sandwich"></center>
+        </div>
+      </td>
+
+      <td style="padding: 20px;">
+        <div>
+          <img src="./images/nacho.jpg" alt="Classic Nachos" class="item-img" style="width:190px;"><br><br>
+          <center><h3>Classic Nachos<br>Rs 79</h3>
+          <input type="checkbox" id="30" name="Items" value="Classic Nacho"></center>
+        </div>
+      </td>
+
+      <td style="padding: 20px;">
+        <div>
+          <img src="./images/taco1.jpg" alt="Taco Mexicano" class="item-img" style="width:230px;height:150px;"><br><br>
+          <center><h3>Taco Mexicano<br>Rs 99</h3>
+            <input type="checkbox" id="40" name="Items" value="Taco Mexicano"></center>
+        </div>
+      </td>
+
+      <td style="padding: 20px;">
+        <div>
+          <img src="./images/gallery3.jpg" alt="Pizza" class="item-img" style="width:190px; "><br><br>
+          <center><h3>Pizza<br>Rs 199</h3>
+          <input type="checkbox" id="50" name="Items" value="Pizza"></center>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><div style=" padding:20px;">
+        <img src="./images/popular1.jpg" alt="Cheeseburger" class="item-img" style="width:100%;">
+        <center><h3><br/>Schezwan Noodles<br/>&nbsp;&nbsp;Rs 149</h3>
+       <input type="checkbox" id="60" name="Items" value="Schezwan Noodles" ></center>
+    <!-- <label for="Schezwan Noodles"></label> -->
+       </div></td>
+    <br/>
+    
+   
+      <td><div style=" padding:20px;">
+        <img src="./images/spring" alt="Cheeseburger" class="item-img" style="width:100%;">
+        <center><h3><br/>Paneer Crispy<br/>&nbsp;&nbsp;Rs 199</h3>
+       <input type="checkbox" id="70" name="Items" value="Paneer Crispy"></center>
+        <!-- <label for="Paneer Crispy"></label><br><br/></center> -->
+       </div></td>
+    <br/>
+    
+      <td><div style=" padding:20px;">
+        <img src="./images/food-3.jpg" alt="Cheeseburger" class="item-img" style="width:100%;">
+        <center><h3><br/>&nbsp;Chat<br/>&nbsp;&nbsp;Rs 99</h3>
+       <input type="checkbox" id="80" name="Items" value="Chat"></center>
+    <!-- <label for="Chat"></label><br> <br/> -->
+       </div></td>
+
+       <td><div style=" padding:20px;">
+        <img src="./images/food-4.jpg" alt="Cheeseburger" class="item-img" style="width:100%;">
+        <center><h3><br/>Grilled Vegetable<br/>&nbsp;&nbsp;&nbsp;Rs 49</h3>
+        <input type="checkbox" id="90" name=" Items" value=" Grilled Vegetable "></center>
+    <!-- <label for=" Grilled Vegetable "> </label><br><br/> -->
+       </div></td>
+    <br/>
+    <td><div style=" padding:20px;">
+      <img src="./images/food-1.jpg" alt="Cheeseburger" class="item-img" style="width:100%;">
+      <center><h3><br/>&nbsp;&nbsp;Veg Stroganoff<br/>&nbsp;&nbsp;&nbsp;&nbsp;Rs 179</h3>
+      <input type="checkbox" id="00" name="Items" value="Veg Stroganoff"></center>
+      <!-- <label for="Veg Stroganoff"> </label><br><br/> -->
+     </div></td>
+  <br/>
+    </tr>
+    <!-- menu items can be added here -->
+
+    <tr>
+      <th colspan="5" style="font-size: xx-large; font-weight: bolder; text-align: center; color: grey;">Bakery Items</th>
+    </tr>
+    <tr>
+      <td style="padding: 20px;">
+        <div>
+          <img src="./images/choco.jpg" alt="Chocolate Truffle" class="item-img" style="width:170px;"><br><br>
+          <center><h3>Chocolate Truffle<br>Rs 65</h3>
+          <input type="checkbox" id="1" name="Item" value="Chocolate Truffle"></center>
+        </div>
+      </td>
+
+      <td style="padding: 20px;">
+        <div>
+          <img src="./images/tart.jpg" alt="Tart" class="item-img" style="width: 170px;"><br><br>
+          <center><h3>Tart<br>Rs 90</h3>
+          <input type="checkbox" id="2" name="Item" value="Tart"></center>
+        </div>
+      </td>
+
+      <td style="padding: 20px;">
+        <div>
+          <img src="./images/cookies.jpg" alt="Delicious Cookies" class="item-img" style="width: 170px;"><br><br>
+          <center><h3>Delicious Cookies<br>Rs 79</h3>
+         <input type="checkbox" id="3" name="Item" value="Delicious Cookies"></center>
+        </div>
+      </td>
+
+      <td style="padding: 20px;">
+        <div>
+          <img src="./images/cupcake.jpg" alt="Cupcake" class="item-img" style="width: 170px;"><br><br>
+          <center><h3>Cupcake<br>Rs 99</h3>
+          <input type="checkbox" id="4" name="Item" value="Cupcake"></center>
+        </div>
+      </td>
+
+      <td style="padding: 20px;">
+        <div>
+          <img src="./images/roll.jpg" alt="Swiss Roll" class="item-img" style="width: 170px;"><br><br>
+          <center><h3>Swiss Roll<br>Rs 69</h3>
+          <input type="checkbox" id="5" name="Item" value="Swiss Roll"></center>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+
+
+
+
+<!-- 
+    <div class="custom-select">
+    <select class="form-control" id="deal" name="deal" label="Select a deal" required><br/><br/>
+      <option value="Select">Select a deal</option>
+      <optgroup label="Menu-Items">
+        
+      <option>Cheeseburger<span>(INR 99)</span></option>
+      <option>Grill Sandwich<span>(INR 129)</span></option>
+      <option>Classic nacho<span>(INR 79)</span></option>
+      <option>Taco Mexicano<span>(INR 99)</span></option>
+      <option>Pizza<span>(INR 199.00)</span></option>
+      <option> Schezwan Noodles( INR 149) </option>
+      <option> Paneer Crispy(INR 199) </option>
+      <option> Chat(INR 99) </option>
+      <option> Grilled Vegetable (INR 49) </option>
+      <option>Veg Stroganoff<span>(INR 179.00)</span></option>
+    </optgroup>
+
+    <optgroup label="Bakery-Items">
+      <option> Select Deal </option>
+      <option>Chcolate Truffle<span>(INR 65)</span></option>
+      <option>Tart<span>(INR 90)</span></option>
+      <option>Delicious Cookies<span>(INR 79)</span></option>
+      <option>Cupcake<span>(INR 99)</span></option>
+      <option>Swiss Roll<span>(INR 69)</span></option>
+    </optgroup>
+   
+   </select><br/><br/></div> -->
+
+   <textarea class="form-control" style="resize: none;" rows="5" cols="202"  placeholder="    Order Details
+   Must Write Quantity Here:
+   Qty:1" placeholder  id="message" name="message" required></textarea><br/><br/>
+
+   <textarea class="form-control"  placeholder="Your Address" name="address" id="address" rows="3" cols="202" style="resize: none;"></textarea><br/><br/>
+
+
+
+  <div >
+   <p>Please select your payment mode:</p>
+    <input type="radio" id="COD" name="pay" value="Cash On Delivery">
+    <label for="Cash on Delivery"><p style="color: grey;">Cash On Delivery</p></label><br/>
+    <input type="radio" id="Online" name="pay" value="Credit or Debit">
+    <label for="Credit or Debit"><p style="color:grey">Credit or Debit</p></label><br/><br><br/>
+   <!--   <input  type="radio" id="COD" name="pay" value="Cash On Delivery">
+     <label for="COD">Cash On Delivery</label><br>
+     <input  type="radio" id="online" name="pay" value="Credit or Debit">
+     <label for="online">Credit or Debit</label><br><br/> -->
+ 
+
+   <button  type="submit" name="submit"  value="Place &nbsp; Order" id="btn_order_submit" style="background-color: #e25f22; color:#f9f9f9; border-radius:9px;  font-size: x-large;">Place Order</button>
+  </div>
+   <input type="hidden" name="_template" value="box">
+  </form>
+</div>
+</section>
+
+
+
+
+<!--Footer-->
+<footer class="padding-top bg_black">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 footer_column">
+        <h4 class="heading">Who are we?</h4>
+        <hr class="half_space">
+        <p class="half_space"></p>
+        <p>Launched in Mumbai, KK has grown from a home project to one of the largest food aggregators in the world. We are present in 10 cities globally, enabling our vision of better food for more people. We not only connect people to food in every context but work closely with restaurants to enable a sustainable ecosystem.</p>
+      </div>
+      <div class="col-md-3 col-sm-6 footer_column">
+        <h4 class="heading">Quick Links</h4>
+        <hr class="half_space">
+        <ul class="widget_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="food.html">Our Food</a></li>
+          <li><a href="about.html">About Us</a></li>
+          
+          <li><a href="faq.html">Faq's</a></li>
+          <li><a href="order.html">Order Now</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 footer_column">
+        <h4 class="heading">Newsletter</h4>
+        <hr class="half_space">
+        <p class="icon"><i class="icon-dollar"></i>Sign up with your name and email to get updates fresh updates.</p>
+        <div id="result1" class="text-center"></div>        
+        
+       <form action="http://themesindustry.us13.list-manage.com/subscribe/post-json?u=4d80221ea53f3a4487ddebd93&id=494727d648&c=?" method="get" onSubmit="return false" class="newsletter">
+          <div class="form-group">
+            <input type="email" placeholder="E-mail Address" required name="EMAIL" id="EMAIL" class="form-control" />
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn-submit button3" value="Subscribe" />
+          </div>
+        </form>
+      </div>
+      <div class="col-md-3 col-sm-6 footer_column">
+        <h4 class="heading">Get in Touch</h4>
+        <hr class="half_space">
+        <p></p>
+        <p class="address"><i class="icon-location"></i>KK, Opposite S.L.Raheja Hospital, Mahim Causeway, Mahim (West), Mumbai, Maharashtra 400016.</p>
+        <p class="address"><i class="fa fa-phone"></i>(+91) 892 *** ****</p>
+        <p class="address"><i class="icon-dollar"></i><a href="office@kk.com">office@kk.com</a></p>
+      </div> 
+    </div>
+    <div class="row">
+     <div class="col-md-12">
+        <div class="copyright clearfix">
+          <p>Copyright &copy; 2024 KK. All Right Reserved</p>
+          <ul class="social_icon">
+               <li><a href="#" class="facebook"><i class="icon-facebook5"></i></a></li>
+               <li><a href="#" class="twitter"><i class="icon-twitter4"></i></a></li>
+               <li><a href="#" class="google"><i class="icon-google"></i></a></li>
+              </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="#" id="back-top"><i class="fa fa-angle-up fa-2x"></i></a>
+
+<script src="js/jquery-2.2.3.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/jquery.themepunch.tools.min.js"></script>
+<script src="js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/revolution.extension.layeranimation.min.js"></script>
+<script src="js/revolution.extension.navigation.min.js"></script>
+<script src="js/revolution.extension.parallax.min.js"></script>
+<script src="js/revolution.extension.slideanims.min.js"></script>
+<script src="js/revolution.extension.video.min.js"></script>
+<script src="js/slider.js" type="text/javascript"></script>
+<script src="js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="js/jquery.parallax-1.1.3.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/jquery-countTo.js"></script>
+<script src="js/jquery.appear.js"></script>  
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/functions.js" type="text/javascript"></script>
+ 
+</body>
+</html>
